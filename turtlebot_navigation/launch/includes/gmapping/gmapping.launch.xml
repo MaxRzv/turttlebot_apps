@@ -46,4 +46,8 @@
     <param name="lasamplestep" value="0.005"/>
     <remap from="scan" to="$(arg scan_topic)"/>
   </node>
+
+  <!-- Move base -->
+  <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
+
 </launch>
